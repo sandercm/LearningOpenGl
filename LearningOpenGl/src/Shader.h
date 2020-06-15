@@ -22,6 +22,8 @@ public:
 	void Unbind() const;
 
 	// set uniforms
+	void SetUniform1i(const std::string& name, int f0);
+	void SetUniform1f(const std::string& name, float f0);
 	void SetUniform4f(const std::string& name, float f0, float f1, float f2, float f3);
 private:
 	ShaderProgramSource ParseShader(const std::string& filepath);
